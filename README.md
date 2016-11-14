@@ -1,5 +1,5 @@
 # smartfm
-smartfm handles frontmatter of files
+frontmatter done right
 
 ## Availabililty
 [![npm](https://push.rocks/assets/repo-button-npm.svg)](https://www.npmjs.com/package/smartfm)
@@ -17,20 +17,26 @@ smartfm handles frontmatter of files
 [![node](https://img.shields.io/badge/node->=%206.x.x-blue.svg)](https://nodejs.org/dist/latest-v6.x/docs/api/)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-## Usage
+## What is frontMatter?
 
 say you have the following markdown file:
 ```markdown
 ---
-title: A really awesome article
+title: A Really Awesome Article
 date: 23-10-2020
 type: feature
 ---
-# A Awesome Title
+# An Awesome Title
 The world is cool. And here is why
 * reason 1
 * reason 2
 ```
+The top part that is enclosed by `---` denotes frontmatter, usually written in yaml notation.
+Frontmatter is not exclusive to markdown.
+It can be used as prefix in any type of file when preprocessed with smartfm.
+
+## Usage 
+We recommend TypeScript for best in class Intellisense.
 
 ```javascript
 import * as smartfm from * smartfm
