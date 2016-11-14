@@ -49,5 +49,5 @@ export let parse = (stringToParse: string): IParsedFM => {
  * add frontmatter to a string
  */
 export let stringify = (bodyString: string, frontmatterData: any) => {
-    grayMatter.stringify(bodyString, frontmatterData)
+    return grayMatter.stringify(bodyString, frontmatterData)
 }

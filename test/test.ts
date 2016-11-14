@@ -3,23 +3,23 @@ import * as should from 'should'
 
 import * as smartfm from '../dist/index'
 
-describe('smartfm', function() {
-    let testSmartfm = new smartfm.Smartfm
-    it('.parse()', function() {
+describe('smartfm', function () {
+    let testSmartfm = new smartfm.Smartfm({ fmType: 'yaml' })
+    it('.parse()', function () {
         let testString = `---
 testKey: testValue
 testKey2: testValue2
 ---
 # some markdown`
         let parsedString = testSmartfm.parse(testString)
-        should(parsedString.data).have.property('testKey','testValue')
-        should(parsedString.data).have.property('testKey2','testValue2')
+        should(parsedString.data).have.property('testKey', 'testValue')
+        should(parsedString.data).have.property('testKey2', 'testValue2')
         should(parsedString.orig).equal(testString)
     })
-    it('.stringify', function(){
-        let testStringPure = `# some markdown heading
-some first row`
-        let testStringCombined = testSmartfm.stringify(testStringPure, {testData: 'hi'})
-        console.log(testStringCombined)
+    it('.stringify', function () {
+        let testStringPure = `# some markdown heading\nsome first row`
+        let testStringCombined = testSmartfm.stringify(testStringPure, { testData: 'hi' })
+        let resultString = '---\ntestData: hi\n---\n# some markdown heading\nsome first row\n'
+        should(resultString).equal(testStringCombined)
     })
 })
