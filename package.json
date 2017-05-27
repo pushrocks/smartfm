@@ -1,6 +1,6 @@
 {
   "name": "smartfm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "frontmatter done right",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
