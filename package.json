@@ -1,11 +1,13 @@
 {
-  "name": "smartfm",
+  "name": "@pushrocks/smartfm",
   "version": "1.0.5",
+  "private": false,
   "description": "frontmatter done right",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "(npmts)"
+    "test": "(tstest test/)",
+    "build": "tsbuild"
   },
   "repository": {
     "type": "git",
@@ -21,10 +23,13 @@
   },
   "homepage": "https://gitlab.com/pushrocks/smartfm#README",
   "dependencies": {
-    "gray-matter": "^2.1.0",
-    "typings-global": "^1.0.14"
+    "gray-matter": "^4.0.1"
   },
   "devDependencies": {
-    "tapbundle": "^1.0.13"
+    "@gitzone/tsbuild": "^2.0.22",
+    "@gitzone/tsrun": "^1.1.12",
+    "@gitzone/tstest": "^1.0.15",
+    "@pushrocks/tapbundle": "^3.0.5",
+    "@types/node": "^10.9.2"
   }
 }

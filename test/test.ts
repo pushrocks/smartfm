@@ -1,26 +1,25 @@
-import { tap, expect } from 'tapbundle'
+import { tap, expect } from '@pushrocks/tapbundle';
 
-import * as smartfm from '../dist/index'
+import * as smartfm from '../ts/index';
 
-
-let testSmartfm = new smartfm.Smartfm({ fmType: 'yaml' })
+let testSmartfm = new smartfm.Smartfm({ fmType: 'yaml' });
 tap.test('.parse()', async () => {
   let testString = `---
 testKey: testValue
 testKey2: testValue2
 ---
 # some markdown
-`
-  let parsedString = testSmartfm.parse(testString)
-  expect(parsedString.data).to.have.property('testKey', 'testValue')
-  expect(parsedString.data).to.have.property('testKey2', 'testValue2')
-  expect(parsedString.orig).to.equal(testString)
-})
+`;
+  let parsedString = testSmartfm.parse(testString);
+  expect(parsedString.data).to.have.property('testKey', 'testValue');
+  expect(parsedString.data).to.have.property('testKey2', 'testValue2');
+  expect(parsedString.orig.toString()).to.equal(testString);
+});
 tap.test('.stringify', async () => {
-  let testStringPure = `# some markdown heading\nsome first row`
-  let testStringCombined = testSmartfm.stringify(testStringPure, { testData: 'hi' })
-  let resultString = '---\ntestData: hi\n---\n# some markdown heading\nsome first row\n'
-  expect(resultString).to.equal(testStringCombined)
-})
+  let testStringPure = `# some markdown heading\nsome first row`;
+  let testStringCombined = testSmartfm.stringify(testStringPure, { testData: 'hi' });
+  let resultString = '---\ntestData: hi\n---\n# some markdown heading\nsome first row\n';
+  expect(resultString).to.equal(testStringCombined);
+});
 
-tap.start()
+tap.start();

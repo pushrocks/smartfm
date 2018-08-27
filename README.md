@@ -1,13 +1,16 @@
 # smartfm
+
 frontmatter done right
 
 ## Availabililty
+
 [![npm](https://push.rocks/assets/repo-button-npm.svg)](https://www.npmjs.com/package/smartfm)
 [![git](https://push.rocks/assets/repo-button-git.svg)](https://gitlab.com/pushrocks/smartfm)
 [![git](https://push.rocks/assets/repo-button-mirror.svg)](https://github.com/pushrocks/smartfm)
 [![docs](https://push.rocks/assets/repo-button-docs.svg)](https://pushrocks.gitlab.io/smartfm/)
 
 ## Status for master
+
 [![build status](https://gitlab.com/pushrocks/smartfm/badges/master/build.svg)](https://gitlab.com/pushrocks/smartfm/commits/master)
 [![coverage report](https://gitlab.com/pushrocks/smartfm/badges/master/coverage.svg)](https://gitlab.com/pushrocks/smartfm/commits/master)
 [![Dependency Status](https://david-dm.org/pushrocks/smartfm.svg)](https://david-dm.org/pushrocks/smartfm)
@@ -20,22 +23,28 @@ frontmatter done right
 ## What is frontMatter?
 
 say you have the following markdown file:
+
 ```markdown
 ---
 title: A Really Awesome Article
 date: 23-10-2020
 type: feature
 ---
+
 # An Awesome Title
+
 The world is cool. And here is why
-* reason 1
-* reason 2
+
+- reason 1
+- reason 2
 ```
+
 The top part that is enclosed by `---` denotes frontmatter, usually written in yaml notation.
 Frontmatter is not exclusive to markdown.
 It can be used as prefix in any type of file when preprocessed with smartfm.
 
-## Usage 
+## Usage
+
 We recommend TypeScript for best in class Intellisense.
 
 ```javascript
