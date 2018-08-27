@@ -1,4 +1,3 @@
-import 'typings-global';
 import * as grayMatter from 'gray-matter';
 
 export type TFrontMatter = 'yaml' | 'json';
