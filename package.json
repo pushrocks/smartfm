@@ -23,13 +23,24 @@
   },
   "homepage": "https://gitlab.com/pushrocks/smartfm#README",
   "dependencies": {
-    "gray-matter": "^4.0.1"
+    "gray-matter": "^4.0.2"
   },
   "devDependencies": {
-    "@gitzone/tsbuild": "^2.0.22",
-    "@gitzone/tsrun": "^1.1.12",
-    "@gitzone/tstest": "^1.0.15",
-    "@pushrocks/tapbundle": "^3.0.5",
-    "@types/node": "^10.9.2"
-  }
+    "@gitzone/tsbuild": "^2.1.17",
+    "@gitzone/tsrun": "^1.2.8",
+    "@gitzone/tstest": "^1.0.24",
+    "@pushrocks/tapbundle": "^3.0.13",
+    "@types/node": "^12.7.4"
+  },
+  "files": [
+    "ts/*",
+    "ts_web/*",
+    "dist/*",
+    "dist_web/*",
+    "dist_ts_web/*",
+    "assets/*",
+    "cli.js",
+    "npmextra.json",
+    "readme.md"
+  ]
 }

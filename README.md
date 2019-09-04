@@ -1,47 +1,20 @@
-# smartfm
-
+# @pushrocks/smartfm
 frontmatter done right
 
-## Availabililty
-
-[![npm](https://push.rocks/assets/repo-button-npm.svg)](https://www.npmjs.com/package/smartfm)
-[![git](https://push.rocks/assets/repo-button-git.svg)](https://gitlab.com/pushrocks/smartfm)
-[![git](https://push.rocks/assets/repo-button-mirror.svg)](https://github.com/pushrocks/smartfm)
-[![docs](https://push.rocks/assets/repo-button-docs.svg)](https://pushrocks.gitlab.io/smartfm/)
+## Availabililty and Links
+* [npmjs.org (npm package)](https://www.npmjs.com/package/@pushrocks/smartfm)
+* [gitlab.com (source)](https://gitlab.com/pushrocks/smartfm)
+* [github.com (source mirror)](https://github.com/pushrocks/smartfm)
+* [docs (typedoc)](https://pushrocks.gitlab.io/smartfm/)
 
 ## Status for master
-
 [![build status](https://gitlab.com/pushrocks/smartfm/badges/master/build.svg)](https://gitlab.com/pushrocks/smartfm/commits/master)
 [![coverage report](https://gitlab.com/pushrocks/smartfm/badges/master/coverage.svg)](https://gitlab.com/pushrocks/smartfm/commits/master)
-[![Dependency Status](https://david-dm.org/pushrocks/smartfm.svg)](https://david-dm.org/pushrocks/smartfm)
-[![bitHound Dependencies](https://www.bithound.io/github/pushrocks/smartfm/badges/dependencies.svg)](https://www.bithound.io/github/pushrocks/smartfm/master/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/github/pushrocks/smartfm/badges/code.svg)](https://www.bithound.io/github/pushrocks/smartfm)
-[![TypeScript](https://img.shields.io/badge/TypeScript-2.x-blue.svg)](https://nodejs.org/dist/latest-v6.x/docs/api/)
-[![node](https://img.shields.io/badge/node->=%206.x.x-blue.svg)](https://nodejs.org/dist/latest-v6.x/docs/api/)
-[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-
-## What is frontMatter?
-
-say you have the following markdown file:
-
-```markdown
----
-title: A Really Awesome Article
-date: 23-10-2020
-type: feature
----
-
-# An Awesome Title
-
-The world is cool. And here is why
-
-- reason 1
-- reason 2
-```
-
-The top part that is enclosed by `---` denotes frontmatter, usually written in yaml notation.
-Frontmatter is not exclusive to markdown.
-It can be used as prefix in any type of file when preprocessed with smartfm.
+[![npm downloads per month](https://img.shields.io/npm/dm/@pushrocks/smartfm.svg)](https://www.npmjs.com/package/@pushrocks/smartfm)
+[![Known Vulnerabilities](https://snyk.io/test/npm/@pushrocks/smartfm/badge.svg)](https://snyk.io/test/npm/@pushrocks/smartfm)
+[![TypeScript](https://img.shields.io/badge/TypeScript->=%203.x-blue.svg)](https://nodejs.org/dist/latest-v10.x/docs/api/)
+[![node](https://img.shields.io/badge/node->=%2010.x.x-blue.svg)](https://nodejs.org/dist/latest-v10.x/docs/api/)
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-prettier-ff69b4.svg)](https://prettier.io/)
 
 ## Usage
 
@@ -80,4 +53,9 @@ let mySmartfm = new smartfm.Smartfm({
 })
 ```
 
-[![npm](https://push.rocks/assets/repo-header.svg)](https://push.rocks)
+For further information read the linked docs at the top of this readme.
+
+> MIT licensed | **&copy;** [Lossless GmbH](https://lossless.gmbh)
+| By using this npm module you agree to our [privacy policy](https://lossless.gmbH/privacy)
+
+[![repo-footer](https://lossless.gitlab.io/publicrelations/repofooter.svg)](https://maintainedby.lossless.com)

@@ -15,11 +15,15 @@ testKey2: testValue2
   expect(parsedString.data).to.have.property('testKey2', 'testValue2');
   expect(parsedString.orig.toString()).to.equal(testString);
 });
-tap.test('.stringify', async () => {
+tap.test('should stringify data', async () => {
   let testStringPure = `# some markdown heading\nsome first row`;
   let testStringCombined = testSmartfm.stringify(testStringPure, { testData: 'hi' });
   let resultString = '---\ntestData: hi\n---\n# some markdown heading\nsome first row\n';
   expect(resultString).to.equal(testStringCombined);
+});
+
+tap.test('should parse a normal frontmatter file', async () => {
+  
 });
 
 tap.start();
