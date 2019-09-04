@@ -29,4 +29,17 @@ export class Smartfm {
   parse(stringToParse: string) {
     return grayMatter(stringToParse);
   }
+
+  /**
+   * parse from commnets
+   */
+  parseFromComments(commentStart: string, stringToParse: string) {
+    const diffFunc = (diffMe, diffBy) => diffMe.split(diffBy).join('');
+    let lines = stringToParse.split('\n');
+    lines = lines.map(line => {
+      return diffFunc(line, commentStart);
+    });
+    const cleanedString = lines.join('\n');
+    return this.parse(cleanedString);
+  }
 }

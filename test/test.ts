@@ -23,7 +23,23 @@ tap.test('should stringify data', async () => {
 });
 
 tap.test('should parse a normal frontmatter file', async () => {
-  
+  const normalFile = `---
+heythere: awesome
+---
+really 
+`;
+  let result = testSmartfm.parse(normalFile);
+  expect(result.data.heythere).to.equal('awesome')
+});
+
+tap.test('should parse a commented out frontmatter file', async () => {
+  const commentedFile = `# ---
+# heythere: awesome
+# ---
+really 
+`;
+  let result = testSmartfm.parseFromComments('# ', commentedFile);
+  console.log(result);
 });
 
 tap.start();
