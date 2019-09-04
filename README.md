@@ -1,6 +1,8 @@
 # @pushrocks/smartfm
 frontmatter done right
 
+> Please consider following us on https://beta.news/lossless to subscribe to infos on changes and updates.
+
 ## Availabililty and Links
 * [npmjs.org (npm package)](https://www.npmjs.com/package/@pushrocks/smartfm)
 * [gitlab.com (source)](https://gitlab.com/pushrocks/smartfm)
